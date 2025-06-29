@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function hero() {
+const Hero = () => {
   return (
-    <div>hero</div>
+    <div id='hero' className='h-64 bg-amber-200'>
+      wrggr
+    </div>
   )
 }
+
+export default Hero
