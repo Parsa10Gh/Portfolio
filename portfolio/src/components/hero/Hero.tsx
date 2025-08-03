@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Hero = () => {
   return (
-    <div id='hero' className='h-64 bg-amber-200'>
-      wrggr
+    <div id="hero" className="h-screen relative">
+      <img src="hero-bg.jpg" alt="" className="absolute" />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
