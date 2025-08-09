@@ -27,23 +27,33 @@ const NavContents = () => {
         </h1>
         <ul id="socials" className="flex justify-between text-white">
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <LiaLinkedin />
+            <a href="https://linkedin.com/in/parsagh">
+              <LiaLinkedin />
+            </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <LiaWhatsapp />
+            <a href="">
+              <LiaWhatsapp />
+            </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <LiaGithub />
+            <a href="https://github.com/Parsa10Gh">
+              <LiaGithub />
+            </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <LiaInstagram />
+            <a href="">
+              <LiaInstagram />
+            </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <LiaTelegramPlane />
+            <a href="">
+              <LiaTelegramPlane />
+            </a>
           </li>
         </ul>
       </div>
-      <ul id="navMenu" className="py-8 px-6">
+      <ul id="navMenu" className="py-8 px-6 text-lg">
         <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
           <a href="#hero" className="flex items-center">
             <RiHome2Line className="group-hover:text-sky-500 mb-1 mr-4"></RiHome2Line>

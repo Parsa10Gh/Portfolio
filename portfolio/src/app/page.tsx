@@ -11,11 +11,7 @@ export default function Home() {
           className="xl:pl-[300px] w-full"
         >
           <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
+
         </div>
       </div>
     </>
