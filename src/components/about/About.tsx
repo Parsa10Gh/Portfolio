@@ -3,7 +3,7 @@ import { RxCaretRight } from "react-icons/rx";
 
 const About = () => {
   return (
-    <div id="about-container" className="px-3 min-[480px]:px-14 sm:px-28 lg:px-10 ">
+    <div id="about-container" className="px-3 min-[480px]:px-14 sm:px-36 lg:px-10 ">
       <h1 className="py-12 text-3xl font-bold">
         <span className="border-b-4 border-sky-600 pb-4">Ab</span>out
       </h1>
@@ -14,7 +14,7 @@ const About = () => {
         sit in iste officiis commodi quidem hic quas.
       </p>
       <div className="lg:flex py-16">
-        <img src="MyPhoto2.jpeg" alt="" className="lg:w-1/3 md:pr-28 lg:pr-0 rounded-2xl" />
+        <img src="MyPhoto2.jpeg" alt="" className="lg:w-1/3 h-fit lg:pr-0 rounded-2xl" />
         <div className="lg:pl-6 pt-8 lg:pt-0">
           <h2 className="text-2xl font-semibold">Front-end Developer</h2>
           <p className="px-0 py-4">
