@@ -3,7 +3,7 @@ import { RxCaretRight } from "react-icons/rx";
 
 const About = () => {
   return (
-    <div id="about-container" className="px-3 min-[480px]:px-14 sm:px-36 lg:px-10 ">
+    <div id="about-container" className="px-3 min-[480px]:px-14 sm:px-36 lg:px-10">
       <h1 className="py-12 text-3xl font-bold">
         <span className="border-b-4 border-sky-600 pb-4">Ab</span>out
       </h1>
