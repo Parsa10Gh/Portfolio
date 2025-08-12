@@ -14,9 +14,9 @@ const About = () => {
         sit in iste officiis commodi quidem hic quas.
       </p>
       <div className="lg:flex py-16">
-        <img src="MyPhoto2.jpeg" alt="" className="lg:w-1/3 h-fit md:pr-28 lg:pr-0" />
-        <div className="lg:pl-6 pt-8">
-          <h1 className="text-2xl font-semibold">Front-end Developer</h1>
+        <img src="MyPhoto2.jpeg" alt="" className="lg:w-1/3 md:pr-28 lg:pr-0 rounded-2xl" />
+        <div className="lg:pl-6 pt-8 lg:pt-0">
+          <h2 className="text-2xl font-semibold">Front-end Developer</h2>
           <p className="px-0 py-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -25,56 +25,56 @@ const About = () => {
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Birthday :</span>
+                <strong>Birthday :</strong>
                 &nbsp;&nbsp;&nbsp;21 May 2003
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Age :</span>
+                <strong>Age :</strong>
                 &nbsp;&nbsp;&nbsp;22
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Website :</span>
+                <strong>Website :</strong>
                 &nbsp;&nbsp;&nbsp;www.portfolio.com
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Degree :</span>
+                <strong className="font-bold">Degree :</strong>
                 &nbsp;&nbsp;&nbsp;Bachelor
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Phone :</span>
+                <strong>Phone :</strong>
                 &nbsp;&nbsp;&nbsp;+989397815214
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Email :</span>
+                <strong>Email :</strong>
                 &nbsp;&nbsp;&nbsp;parsa.ghorbani11@gmail.com
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">City :</span>
+                <strong>City :</strong>
                 &nbsp;&nbsp;&nbsp;Tehran, Iran
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <span className="font-bold">Freelance :</span>
+                <strong>Freelance :</strong>
                 &nbsp;&nbsp;&nbsp;Available
               </p>
             </li>
