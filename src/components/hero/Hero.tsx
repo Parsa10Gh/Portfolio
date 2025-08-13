@@ -1,12 +1,19 @@
-"use client";
+"use client"
 
 import React from "react";
-
+import { motion } from "motion/react";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div id="hero" className="h-screen relative flex">
+    <motion.div
+      id="hero"
+      className="h-screen relative flex"
+      initial={{ }}
+      whileInView={{ opacity: 1}}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <img
         id="hero_Background"
         src="image.jpg"
@@ -37,7 +44,7 @@ const Hero = () => {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,4 +1,6 @@
-import React from "react";
+import path from "path";
+import React, { JSX } from "react";
+import { IconType } from "react-icons";
 import { FiServer } from "react-icons/fi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { IoImagesOutline } from "react-icons/io5";
@@ -11,9 +13,54 @@ import {
 } from "react-icons/lia";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { RiHome2Line } from "react-icons/ri";
+import { TbDeviceDesktopCode } from "react-icons/tb";
 import { TfiEmail } from "react-icons/tfi";
 
 const NavContents = () => {
+  interface ContentsType {
+    title: string;
+    icon: IconType;
+    link: string;
+  }
+
+  const contents: ContentsType[] = [
+    {
+      title: "Home",
+      icon: RiHome2Line,
+      link: "home",
+    },
+    {
+      title: "About",
+      icon: MdOutlinePersonOutline,
+      link: "about",
+    },
+    {
+      title: "Skills",
+      icon: TbDeviceDesktopCode,
+      link: "skills",
+    },
+    {
+      title: "Resume",
+      icon: HiOutlineDocumentText,
+      link: "resume",
+    },
+    {
+      title: "Portfolio",
+      icon: IoImagesOutline,
+      link: "portfolio",
+    },
+    {
+      title: "Services",
+      icon: FiServer,
+      link: "services",
+    },
+    {
+      title: "Contact",
+      icon: TfiEmail,
+      link: "contact",
+    },
+  ];
+
   return (
     <>
       <div id="myInfo" className="py-4 px-8 b-amber-400">
@@ -54,42 +101,14 @@ const NavContents = () => {
         </ul>
       </div>
       <ul id="navMenu" className="py-8 px-6 text-lg">
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="#hero" className="flex items-center">
-            <RiHome2Line className="group-hover:text-sky-500 mb-1 mr-4"></RiHome2Line>
-            <span className="group-hover:text-white">Home</span>
-          </a>
-        </li>
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="#about" className="flex items-center">
-            <MdOutlinePersonOutline className="group-hover:text-sky-500 mb-1 mr-4"></MdOutlinePersonOutline>
-            <span className="group-hover:text-white">About</span>
-          </a>
-        </li>
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="#resume" className="flex items-center">
-            <HiOutlineDocumentText className="group-hover:text-sky-500 mb-1 mr-4"></HiOutlineDocumentText>
-            <span className="group-hover:text-white">Resume</span>
-          </a>
-        </li>
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="#portfolio" className="flex items-center">
-            <IoImagesOutline className="group-hover:text-sky-500 mb-1 mr-4"></IoImagesOutline>
-            <span className="group-hover:text-white">Portfolio</span>
-          </a>
-        </li>
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="#services" className="flex items-center">
-            <FiServer className="group-hover:text-sky-500 mb-1 mr-4"></FiServer>
-            <span className="group-hover:text-white">Services</span>
-          </a>
-        </li>
-        <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-          <a href="contact" className="flex items-center">
-            <TfiEmail className="group-hover:text-sky-500 mb-1 mr-4" />
-            <span className="group-hover:text-white">Contact</span>
-          </a>
-        </li>
+        {contents.map((content) => (
+          <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
+            <a href={`#${content.link}`} className="flex items-center">
+              <content.icon className="group-hover:text-sky-500 mb-1 mr-4" />
+              <span className="group-hover:text-white">{content.title}</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </>
   );

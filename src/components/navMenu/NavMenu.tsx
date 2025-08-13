@@ -23,7 +23,6 @@ const NavMenu = () => {
         {isNavOpen ? <FaX /> : <FaListUl />}
       </button>
 
-      {/* Animated sidebar for smaller screens */}
       <AnimatePresence>
         {isNavOpen && (
           <motion.div
@@ -39,7 +38,6 @@ const NavMenu = () => {
         )}
       </AnimatePresence>
 
-      {/* Static always-visible sidebar for xl and above */}
       <motion.div
         className="bg-[#040B14] hidden xl:block fixed left-0 top-0 h-full w-[300px] z-30 font-(family-name:poppins)"
         initial={{ x: "-100%" }}

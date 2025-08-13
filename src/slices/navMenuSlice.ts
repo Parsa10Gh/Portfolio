@@ -7,7 +7,7 @@ interface navState {
 }
 
 const initialState: navState = {
-    isNavOpen: true,
+    isNavOpen: false,
 };
 
 const navState = createSlice({
