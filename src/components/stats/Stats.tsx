@@ -9,36 +9,36 @@ const Stats = () => {
       <div className="flex items-start">
         <LuSmile className="text-5xl text-sky-600 h-fit py-1"/>
         <div className="pl-4">
-          <h1 className="text-5xl lg:text-6xl font-semibold pb-2"><AnimatedCounter from={0} to={1} /></h1>
-          <p className="font-light">
-            <strong>Happy Clients</strong> Lorem ipsum dolor consectetur.
+          <h1 className="text-5xl font-bold pb-2"><AnimatedCounter from={0} to={1} /></h1>
+          <p className="font-light text-gray-500">
+            <strong className="font-semibold">Happy Clients</strong> Lorem ipsum dolor consectetur.
           </p>
         </div>
       </div>
       <div className="flex items-start">
         <LuNotebookText className="text-5xl text-sky-600 h-fit py-1"/>
         <div className="pl-4">
-          <h1 className="text-5xl lg:text-6xl font-semibold pb-2"><AnimatedCounter from={0} to={5} /></h1>
-          <p className="font-light">
-            <strong>Projects</strong> Lorem ipsum dolor consectetur.
+          <h1 className="text-5xl font-bold pb-2"><AnimatedCounter from={0} to={5} /></h1>
+          <p className="font-light text-gray-500">
+            <strong className="font-semibold">Projects</strong> Lorem ipsum dolor consectetur.
           </p>
         </div>
       </div>
       <div className="flex items-start">
         <LuCodeXml className="text-5xl text-sky-600 h-fit py-1"/>
         <div className="pl-4">
-          <h1 className="text-5xl lg:text-6xl font-semibold pb-2"><AnimatedCounter from={0} to={1421} /></h1>
-          <p className="font-light">
-            <strong>Hours Of Coding</strong> Lorem ipsum dolor consectetur.
+          <h1 className="text-5xl font-bold pb-2"><AnimatedCounter from={0} to={1421} /></h1>
+          <p className="font-light text-gray-500">
+            <strong className="font-semibold">Hours Of Coding</strong> Lorem ipsum dolor consectetur.
           </p>
         </div>
       </div>
       <div className="flex items-start">
         <PiBuildingOffice className="text-5xl text-sky-600 h-fit py-1"/>
         <div className="pl-4">
-          <h1 className="text-5xl lg:text-6xl font-semibold pb-2"><AnimatedCounter from={0} to={1} /></h1>
-          <p className="font-light">
-            <strong>Companies</strong> that i worked with in my career
+          <h1 className="text-5xl font-bold pb-2"><AnimatedCounter from={0} to={1} /></h1>
+          <p className="font-light text-gray-500">
+            <strong className="font-semibold">Companies</strong> that i worked with in my career
           </p>
         </div>
       </div>

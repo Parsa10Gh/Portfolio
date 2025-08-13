@@ -32,15 +32,15 @@ const Skills = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
         deserunts.
       </p>
-      <div className="py-10 grid lg:grid-cols-2 gap-8 text-xs font-medium">
-        {Object.entries(mySkills).map((skill) => (
-          <div>
+      <div className="py-20 grid lg:grid-cols-2 gap-8 text-xs font-medium">
+        {Object.entries(mySkills).map(([skill,percentage]) => (
+          <div key={skill} className="">
             <div className="flex justify-between py-2">
-              <p>{skill[0]}</p>
-              <p>{skill[1]}%</p>
+              <p>{skill}</p>
+              <p>{percentage}%</p>
             </div>
             <div className="w-full h-2.5 relative bg-gray-200">
-              <div className="bg-sky-600 absolute h-full" style={{width: `${skill[1]}%`}}></div>
+              <div className="bg-sky-600 absolute h-full" style={{width: `${percentage}%`}}></div>
             </div>
           </div>
         ))}

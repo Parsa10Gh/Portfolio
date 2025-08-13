@@ -1,6 +1,7 @@
 import About from "@/components/about/About";
 import Hero from "@/components/hero/Hero";
 import NavMenu from "@/components/navMenu/NavMenu";
+import Resume from "@/components/resume/Resume";
 import Skills from "@/components/skills/Skills";
 import Stats from "@/components/stats/Stats";
 
@@ -14,6 +15,7 @@ export default function Home() {
           <About />
           <Stats />
           <Skills />
+          <Resume />
         </div>
       </div>
     </>
