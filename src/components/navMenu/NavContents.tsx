@@ -1,4 +1,3 @@
-import path from "path";
 import React, { JSX } from "react";
 import { IconType } from "react-icons";
 import { FiServer } from "react-icons/fi";
@@ -17,6 +16,7 @@ import { TbDeviceDesktopCode } from "react-icons/tb";
 import { TfiEmail } from "react-icons/tfi";
 
 const NavContents = () => {
+
   interface ContentsType {
     title: string;
     icon: IconType;
@@ -101,8 +101,8 @@ const NavContents = () => {
         </ul>
       </div>
       <ul id="navMenu" className="py-8 px-6 text-lg">
-        {contents.map((content) => (
-          <li className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
+        {contents.map((content,i) => (
+          <li key={i} className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
             <a href={`#${content.link}`} className="flex items-center">
               <content.icon className="group-hover:text-sky-500 mb-1 mr-4" />
               <span className="group-hover:text-white">{content.title}</span>

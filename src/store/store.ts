@@ -2,9 +2,11 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import navReducer from '../slices/navMenuSlice'; // Adjust path if needed
+import portfolioReducer from '../slices/portfolioSlices'; // Adjust path if needed
 const store = configureStore({
   reducer: {
     nav: navReducer,
+    portfolio: portfolioReducer,
   },
 });
 
