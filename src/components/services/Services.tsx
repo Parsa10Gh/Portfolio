@@ -26,12 +26,12 @@ const Services = () => {
         sit in iste officiis commodi quidem hic quas.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-16">
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <PiDevices />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
               Building Responsive Websites
             </h4>
             <p className="py-3 text-sm text-gray-900">
@@ -41,12 +41,12 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <LuAppWindow />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
               Single Page Application Development
             </h4>
             <p className="py-3 text-sm text-gray-900">
@@ -56,12 +56,12 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <PiFigmaLogo />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
               UI/UX Design Implementation
             </h4>
             <p className="py-3 text-sm text-gray-900">
@@ -70,36 +70,36 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <AiOutlineApi />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">API Integration</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">API Integration</h4>
             <p className="py-3 text-sm text-gray-900">
               Connecting front-end interfaces with backend services and APIs to
               fetch and display data.
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <LuBug />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">Testing and Debugging</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">Testing and Debugging</h4>
             <p className="py-3 text-sm text-gray-900">
               Identifying and fixing bugs, ensuring websites and applications
               function correctly across different browsers and devices.
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white">
+        <div className="flex items-start justify-center group">
+          <div className="p-4 rounded-full bg-sky-600 text-2xl text-white group-hover:bg-white group-hover:text-sky-600 border-1 border-sky-600 duration-400">
             <FaCogs />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold">Performance Optimization</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">Performance Optimization</h4>
             <p className="py-3 text-sm text-gray-900">
               Improving website loading times and overall performance through
               techniques like code optimization, image compression, and caching.

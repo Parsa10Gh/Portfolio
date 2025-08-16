@@ -3,11 +3,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '@/store/store';
 
 interface navState {
-    isNavOpen: boolean;
+  isNavOpen: boolean;
+  testimonialsIndex: number
 }
 
 const initialState: navState = {
-    isNavOpen: false,
+  isNavOpen: false,
+  testimonialsIndex: 0,
 };
 
 const navState = createSlice({
@@ -15,12 +17,16 @@ const navState = createSlice({
   initialState,
   reducers: {
     RsetToggleNav: (state, action: PayloadAction<boolean>) => {
-        state.isNavOpen = !action.payload;
+      state.isNavOpen = !action.payload;
+    }, 
+    RsetAddIndex: (state) => {
+      state.testimonialsIndex = state.testimonialsIndex + 1;
     },
   },
 });
 
-export const { RsetToggleNav } = navState.actions;
-export const selectToggleNav = (state:RootState) => state.nav.isNavOpen;
+export const { RsetToggleNav , RsetAddIndex } = navState.actions;
+export const selectToggleNav = (state: RootState) => state.nav.isNavOpen;
+export const selectAddIndex = (state: RootState) => state.nav.testimonialsIndex
 
 export default navState.reducer;
