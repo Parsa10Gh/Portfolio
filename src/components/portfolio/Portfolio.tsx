@@ -59,7 +59,7 @@ const Portfolio = () => {
     <>
       <motion.div
         id="portfolio"
-        className="px-2 min-[480px]:px-14 sm:px-36 lg:px-10 bg-[#F4FAFD]"
+        className="px-2 min-[480px]:px-14 md:px-20 lg:px-10 bg-[#F4FAFD]"
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

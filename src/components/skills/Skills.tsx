@@ -29,7 +29,7 @@ const Skills = () => {
   return (
     <motion.div
     id="skills"
-      className="px-3 min-[480px]:px-14 sm:px-36 lg:px-10 py-8 bg-[#F4FAFD]"
+      className="px-3 min-[480px]:px-14 md:px-20 lg:px-10 py-8 bg-[#F4FAFD]"
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -42,7 +42,7 @@ const Skills = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
         deserunts.
       </p>
-      <div className="py-20 grid lg:grid-cols-2 gap-8 text-xs font-medium">
+      <div className="py-20 grid md:grid-cols-2 gap-8 text-xs font-medium">
         {Object.entries(mySkills).map(([skill, percentage]) => (
           <div key={skill} className="">
             <div className="flex justify-between py-2">

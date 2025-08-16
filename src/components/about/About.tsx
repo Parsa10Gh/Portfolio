@@ -8,7 +8,7 @@ const About = () => {
   return (
     <motion.div
       id="about"
-      className="px-3 min-[480px]:px-14 sm:px-36 lg:px-10"
+      className="px-3 min-[480px]:px-14 md:px-20 lg:px-10"
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -27,7 +27,7 @@ const About = () => {
         <img
           src="MyPhoto2.jpeg"
           alt=""
-          className="lg:w-1/3 h-fit lg:pr-0 rounded-2xl"
+          className="sm:w-2/3 lg:w-1/3 h-fit rounded-2xl "
         />
         <div className="lg:pl-6 pt-8 lg:pt-0">
           <h2 className="text-2xl font-semibold">Front-end Developer</h2>
