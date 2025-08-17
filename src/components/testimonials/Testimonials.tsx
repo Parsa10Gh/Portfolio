@@ -1,7 +1,7 @@
 "use client";
 import { RsetAddIndex, selectAddIndex } from "@/slices/navMenuSlice";
 import { AppDispatch } from "@/store/store";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import React, { useEffect } from "react";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
@@ -52,25 +52,15 @@ const Testimonials = () => {
 
   useEffect(() => {
     const id = setInterval(() => {
-      dispatch(RsetAddIndex());
-    }, 3000);
+      dispatch(RsetAddIndex(testimonialIndex+1));
+      console.log(testimonialIndex)
+    }, 6000);
     return () => clearInterval(id);
-  }, [dispatch]);
+  }, [dispatch, testimonialIndex]);
 
-  // 2) Observe (log) the fresh value whenever it changes
-  useEffect(() => {
-    console.log("testimonialIndex:", testimonialIndex);
-        console.log(visible);
+  useEffect(() => {}, [testimonialIndex]);
 
-  }, [testimonialIndex]);
-
-  // Optional: pick 3 visible items (wrap-around)
-  const n = testimonials.length;
-  const visible = [
-    testimonials[testimonialIndex % n],
-    testimonials[(testimonialIndex + 1) % n],
-    testimonials[(testimonialIndex + 2) % n],
-  ];
+  const loopTestimonials = [...testimonials, ...testimonials.slice(0, 3)];
 
   return (
     <motion.div
@@ -82,52 +72,46 @@ const Testimonials = () => {
       viewport={{ once: true, amount: 0.2 }}
     >
       <h1 className="py-12 text-3xl font-bold">
-        <span className="border-b-4 border-sky-600 pb-4">Tes</span>monials
+        <span className="border-b-4 border-sky-600 pb-4">Tes</span>timonials
       </h1>
       <p>
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
         aliquid fuga eum quidem.
       </p>
-      <div className="grid grid-cols-1 xl:grid-cols-3 grid-rows-1 gap-6 pt-16 pb-10 px-4">
-        <div className="text-center">
-          <p className="p-6 bg-white shadow-2xl rounded-lg">
-            <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
-            &nbsp;&nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Nam praesentium repudiandae in excepturi enim, minus aliquam
-            temporibus expedita quia sit.&nbsp;&nbsp;
-            <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
-          </p>
-          <img
-            src="testimonials-4.jpg"
-            alt=""
-            className="mx-auto w-1/3 rounded-full mt-6"
-          />
-          <h3 className="text-lg font-bold py-2">Matt Brandon</h3>
-          <h4 className="text-[16px]">Freelancer</h4>
-        </div>
-        <div className="text-center">
-          <p className="p-6 bg-white shadow-2xl rounded-lg">
-            <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
-            &nbsp;&nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Nam praesentium repudiandae in excepturi enim, minus aliquam
-            temporibus expedita quia sit.&nbsp;&nbsp;
-            <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
-          </p>
-          <img
-            src="testimonials-4.jpg"
-            alt=""
-            className="mx-auto w-1/3 rounded-full mt-6"
-          />
-          <h3 className="text-lg font-bold py-2">Matt Brandon</h3>
-          <h4 className="text-[16px]">Freelancer</h4>
-        </div>
+
+      <div className="overflow-hidden pt-16 pb-10">
+        <motion.div
+          className="flex"
+          animate={{ x: `-${(testimonialIndex % 5) * (100 / 3)}%` }} // slide based on index
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
+          {loopTestimonials.map((t, i) => (
+            <div key={i} className="w-1/3 flex-shrink-0 text-center px-2">
+              <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
+                <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
+                &nbsp;&nbsp;{t.text}&nbsp;&nbsp;
+                <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
+              </p>
+              <img
+                src={t.image}
+                alt=""
+                className="mx-auto w-1/3 rounded-full mt-6"
+              />
+              <h3 className="text-lg font-bold py-2">{t.name}</h3>
+              <h4 className="text-[16px]">{t.job}</h4>
+            </div>
+          ))}
+        </motion.div>
       </div>
+
       <div className="flex justify-center gap-2 pb-16">
-        <div className="w-3 h-3 bg-none border-1 border-sky-600 rounded-full"></div>
-        <div className="w-3 h-3 bg-none border-1 border-sky-600 rounded-full"></div>
-        <div className="w-3 h-3 bg-none border-1 border-sky-600 rounded-full"></div>
-        <div className="w-3 h-3 bg-none border-1 border-sky-600 rounded-full"></div>
-        <div className="w-3 h-3 bg-none border-1 border-sky-600 rounded-full"></div>
+        {testimonials.map((_, i) => (
+          <div
+            className={`w-3 h-3 border-1 border-sky-600 ${(i==testimonialIndex%5)?("bg-sky-600"):("bg-none")} rounded-full hover:cursor-pointer`}
+            onClick={() => (dispatch(RsetAddIndex(i)))}
+            key={i}
+          ></div>
+        ))}
       </div>
     </motion.div>
   );

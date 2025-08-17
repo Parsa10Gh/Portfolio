@@ -19,8 +19,8 @@ const navState = createSlice({
     RsetToggleNav: (state, action: PayloadAction<boolean>) => {
       state.isNavOpen = !action.payload;
     }, 
-    RsetAddIndex: (state) => {
-      state.testimonialsIndex = state.testimonialsIndex + 1;
+    RsetAddIndex: (state, action: PayloadAction<number>) => {
+      state.testimonialsIndex = action.payload ;
     },
   },
 });
