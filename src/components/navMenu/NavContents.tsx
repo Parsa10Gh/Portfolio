@@ -27,7 +27,7 @@ const NavContents = () => {
     {
       title: "Home",
       icon: RiHome2Line,
-      link: "home",
+      link: "hero",
     },
     {
       title: "About",
@@ -102,8 +102,8 @@ const NavContents = () => {
       </div>
       <ul id="navMenu" className="py-8 px-6 text-lg">
         {contents.map((content,i) => (
-          <li key={i} className="group w-full text-gray-400 pb-8 hover:cursor-pointer">
-            <a href={`#${content.link}`} className="flex items-center">
+          <li key={i} className="group w-full text-gray-400 hover:cursor-pointer">
+            <a href={`#${content.link}`} className="flex items-center py-4">
               <content.icon className="group-hover:text-sky-500 mb-1 mr-4" />
               <span className="group-hover:text-white">{content.title}</span>
             </a>

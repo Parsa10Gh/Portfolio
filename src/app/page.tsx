@@ -1,4 +1,5 @@
 import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 import Hero from "@/components/hero/Hero";
 import NavMenu from "@/components/navMenu/NavMenu";
 import Portfolio from "@/components/portfolio/Portfolio";
@@ -13,7 +14,7 @@ export default function Home() {
     <>
       <div id="container">
         <NavMenu />
-        <div id="contentsContainer" className="xl:pl-[300px] w-full">
+        <div id="contentsContainer" className="xl:pl-[300px] w-full overflow-hidden">
           <Hero />
           <About />
           <Stats />
@@ -22,6 +23,7 @@ export default function Home() {
           <Portfolio />
           <Services />
           <Testimonials />
+          <Contact/>
         </div>
       </div>
     </>
