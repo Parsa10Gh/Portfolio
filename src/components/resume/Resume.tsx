@@ -64,7 +64,7 @@ const Resume = () => {
               Technology. I was admitted after achieving a rank of 621 in the
               national university entrance exam &#40;Konkur&#41;, Which is a
               highly competitive test that selects students for top universities
-              across Iran."
+              across Iran.
             </p>
           </div>
         </div>
