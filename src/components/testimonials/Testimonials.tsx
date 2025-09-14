@@ -7,6 +7,8 @@ import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
 const Testimonials = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const testimonialIndex = useSelector(selectAddIndex);
   interface Testimonials {
     name: string;
     job: string;
@@ -47,8 +49,6 @@ const Testimonials = () => {
     },
   ];
 
-  const dispatch = useDispatch<AppDispatch>();
-  const testimonialIndex = useSelector(selectAddIndex);
   const pose: number[] = [
     0,
     -33.3,
