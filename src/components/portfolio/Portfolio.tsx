@@ -12,17 +12,17 @@ const Portfolio = () => {
   const isModalOpen = useSelector(selectToggleModal);
   const activeProduct = useSelector(selectActiveProduct)
 
-  const openModal = (product: products) => {
+  const openModal = (product: Products) => {
     dispatch(RsetActiveProduct(product)) ;
   };
 
-  interface products {
+  interface Products {
     title: string;
     subtitle: string;
     image: string;
   }
 
-  const products: products[] = [
+  const products: Products[] = [
     {
       title: "Book",
       subtitle: "Lorem ipsum dolor sit amet consectetur",

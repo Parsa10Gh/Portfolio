@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import React from "react";
 
-interface mySkillsType {
+interface MySkillsType {
   HTML: number;
   CSS: number;
   JAVASCRIPT: number;
@@ -14,7 +14,7 @@ interface mySkillsType {
   TAILWIND: number;
 }
 
-const mySkills: mySkillsType = {
+const mySkills: MySkillsType = {
   HTML: 100,
   CSS: 90,
   JAVASCRIPT: 80,

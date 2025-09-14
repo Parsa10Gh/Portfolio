@@ -7,14 +7,14 @@ import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
 const Testimonials = () => {
-  interface testimonials {
+  interface Testimonials {
     name: string;
     job: string;
     image: string;
     text: string;
   }
 
-  const testimonials: testimonials[] = [
+  const testimonials: Testimonials[] = [
     {
       name: "Matt Brandon",
       job: "Designer",
