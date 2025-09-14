@@ -9,7 +9,7 @@ import Skills from "@/components/skills/Skills";
 import Stats from "@/components/stats/Stats";
 import Testimonials from "@/components/testimonials/Testimonials";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div id="container">
@@ -29,3 +29,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home
