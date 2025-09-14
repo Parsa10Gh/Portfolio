@@ -84,14 +84,15 @@ const Testimonials = () => {
           <span className="border-b-4 border-sky-600 pb-4">Tes</span>timonials
         </h1>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem.
+          This section is currently under development. The following
+          testimonials are placeholders and will be updated with real feedback
+          from clients and collaborators soon.
         </p>
-       
+
         {/* less than lg width */}
         <motion.div
           className="flex lg:hidden pt-16 pb-10"
-          animate={{ x: `${pose[testimonialIndex % 9]*3}%` }}
+          animate={{ x: `${pose[testimonialIndex % 9] * 3}%` }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           {loopTestimonials.map((t, i) => (

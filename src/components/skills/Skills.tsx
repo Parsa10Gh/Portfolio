@@ -16,19 +16,19 @@ interface MySkillsType {
 
 const mySkills: MySkillsType = {
   HTML: 100,
-  CSS: 90,
+  CSS: 95,
   JAVASCRIPT: 80,
-  REACT: 100,
+  REACT: 90,
   NEXT: 100,
   TYPESCRIPT: 75,
   REDUX: 90,
-  TAILWIND: 100,
+  TAILWIND: 90,
 };
 
 const Skills = () => {
   return (
     <motion.div
-    id="skills"
+      id="skills"
       className="px-3 min-[480px]:px-14 md:px-20 lg:px-10 py-8 bg-[#F4FAFD]"
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +39,8 @@ const Skills = () => {
         <span className="border-b-4 border-sky-600 pb-4">Ski</span>lls
       </h1>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
-        deserunts.
+        These are the core skills and tools that I use to create responsive and
+        user-friendly interfaces.
       </p>
       <div className="py-20 grid md:grid-cols-2 gap-8 text-xs font-medium">
         {Object.entries(mySkills).map(([skill, percentage]) => (
@@ -53,8 +53,8 @@ const Skills = () => {
               <motion.div
                 className="bg-sky-600 absolute h-full"
                 style={{ width: `${percentage}%` }}
-                initial={{width:0}}
-                whileInView={{width:`${percentage}%` }}
+                initial={{ width: 0 }}
+                whileInView={{ width: `${percentage}%` }}
                 transition={{ duration: 1, ease: "easeOut" }}
               ></motion.div>
             </div>

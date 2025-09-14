@@ -16,10 +16,13 @@ const Resume = () => {
         <span className="border-b-4 border-sky-600 pb-4">Res</span>ume
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        reiciendis a fugiat pariatur possimus veniam! Modi cupiditate sit quae
-        fugiat vero similique natus incidunt ut harum? Eaque dicta hic in
-        deserunt quasi beatae dolore mollitia corporis commodi qui.
+        Self-taught frontend developer with expertise in React, Next.js,
+        TypeScript, and Redux. Through personal and collaborative projects, I
+        have gained solid experience in building modern, responsive, and
+        user-friendly interfaces , delivering results comparable to experienced
+        professionals. I am highly motivated, eager to learn new technologies,
+        and thrive in team-oriented environments where I can contribute to both
+        technical solutions and project success.
       </p>
       <div className="grid lg:grid-cols-2 gap-4 py-16">
         <div>
@@ -56,10 +59,12 @@ const Resume = () => {
               Iran University of Science and Technology, Tehran
             </p>
             <p className="py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id
-              recusandae eius tempora autem quaerat illum, ullam harum eaque
-              perspiciatis. Quis tempora beatae neque quod magni ipsa dolorem
-              assumenda itaque?
+              I earned my Bachelor's degree in Electrical Engineering with a
+              specialization in Control from Iran University of Science and
+              Technology. I was admitted after achieving a rank of 621 in the
+              national university entrance exam &#40;Konkur&#41;, Which is a
+              highly competitive test that selects students for top universities
+              across Iran."
             </p>
           </div>
         </div>
@@ -77,10 +82,24 @@ const Resume = () => {
             <p className="px-4 py-2 block">July–October 2024</p>
             <p className="py-1 italic">Gashtasp, Tehran</p>
             <p className="py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id
-              recusandae eius tempora autem quaerat illum, ullam harum eaque
-              perspiciatis. Quis tempora beatae neque quod magni ipsa dolorem
-              assumenda itaque?
+              Gashtasp is a leading accelerator in the field of artificial
+              intelligence. During my time there, I contributed to the
+              development of modern, scalable, and user-focused web
+              applications which was for showing the services they provide and present their services.
+              <p className="font-bold pt-2 pb-1.5">Key Achievements & Tasks:</p>
+              <ul className="list-disc px-4">
+                <li className="py-1">Built responsive and user-friendly landing pages</li>
+                <li className="py-1">Implemented UI/UX designs into functional interfaces</li>
+                <li className="py-1">Developed Single Page Applications (SPA)</li>
+                <li className="py-1">Integrated APIs for dynamic data handling</li>
+                <li className="py-1">
+                  Optimized application performance for speed and efficiency
+                </li>
+                <li className="py-1">
+                  Contributed to the development of Software as a Service (SaaS)
+                  solutions
+                </li>
+              </ul>
             </p>
           </div>
         </div>

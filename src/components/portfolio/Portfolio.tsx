@@ -69,10 +69,7 @@ const Portfolio = () => {
           <span className="border-b-4 border-sky-600 pb-4">Por</span>tfolio
         </h1>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          Some of the projects I&apos;ve built, showcasing my work with React, Next.js, TypeScript, and other technologies.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
           {products.map((product,index) => (

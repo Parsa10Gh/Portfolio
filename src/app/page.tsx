@@ -17,7 +17,7 @@ export default function Home() {
         <div id="contentsContainer" className="xl:pl-[300px] w-full overflow-hidden">
           <Hero />
           <About />
-          <Stats />
+          {/* <Stats /> */}
           <Skills />
           <Resume />
           <Portfolio />

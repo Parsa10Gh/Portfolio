@@ -20,10 +20,12 @@ const Services = () => {
         <span className="border-b-4 border-sky-600 pb-4">Ser</span>vices
       </h1>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
+        I offer a range of frontend development services to help bring ideas to
+        life on the web. This includes building responsive and modern websites,
+        developing dynamic single-page applications, integrating APIs to fetch
+        and display data, implementing clean and user-friendly UI/UX designs,
+        and optimizing performance to ensure fast and smooth experiences across
+        all devices and browsers.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-16">
         <div className="flex items-start justify-center group">
@@ -75,7 +77,9 @@ const Services = () => {
             <AiOutlineApi />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">API Integration</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
+              API Integration
+            </h4>
             <p className="py-3 text-sm text-gray-900">
               Connecting front-end interfaces with backend services and APIs to
               fetch and display data.
@@ -87,7 +91,9 @@ const Services = () => {
             <LuBug />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">Testing and Debugging</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
+              Testing and Debugging
+            </h4>
             <p className="py-3 text-sm text-gray-900">
               Identifying and fixing bugs, ensuring websites and applications
               function correctly across different browsers and devices.
@@ -99,7 +105,9 @@ const Services = () => {
             <FaCogs />
           </div>
           <div className="px-5">
-            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">Performance Optimization</h4>
+            <h4 className="text-xl font-semibold group-hover:text-sky-600 duration-400">
+              Performance Optimization
+            </h4>
             <p className="py-3 text-sm text-gray-900">
               Improving website loading times and overall performance through
               techniques like code optimization, image compression, and caching.

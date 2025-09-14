@@ -37,7 +37,10 @@ const Contact = () => {
         <span className="border-b-4 border-sky-600 pb-4">Con</span>tact
       </h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolorum.
+        Ways to get in touch with me for collaboration, inquiries, or freelance
+        opportunities. you can also use the form below to send me a message
+        directly. Just fill in your name, email, subject, and message, and I’ll
+        get back to you as soon as possible. I look forward to hearing from you!
       </p>
       <div className="lg:flex py-16 gap-8">
         <div className="lg:w-5/12 py-6 px-3 sm:px-8 shadow-[-2px_-1px_20px_rgba(0,0,0,0.25)]">
@@ -48,7 +51,9 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="text-lg font-bold">Address</h5>
-                <p className="text-sm h-fit">A108 Adam Street, New York, NY 535022</p>
+                <p className="text-sm h-fit">
+                  A108 Adam Street, New York, NY 535022
+                </p>
               </div>
             </li>
             <li className="flex py-5 gap-4">
@@ -57,7 +62,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="text-lg font-bold">Call me</h5>
-                <p className="text-sm">+989*********</p>
+                <p className="text-sm">+989397815214</p>
               </div>
             </li>
             <li className="flex py-5 gap-4">
