@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { JSX } from "react";
 import { IconType } from "react-icons";
 import { FiServer } from "react-icons/fi";
@@ -64,7 +65,7 @@ const NavContents = () => {
   return (
     <>
       <div id="myInfo" className="py-4 px-8 b-amber-400">
-        <img
+        <Image
           src="me.jpeg"
           className="w-3/6 mx-auto border-gray-800 border-8 rounded-full"
           alt=""

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RsetActiveProduct, RsetToggleModal, selectActiveProduct, selectToggleModal } from "@/slices/portfolioSlices";
 import { AppDispatch } from "@/store/store";
 import Link from "next/link";
+import Image from "next/image";
 
 const Portfolio = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -77,7 +78,7 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
           {products.map((product,index) => (
               <div className="relative group overflow-hidden bg-black h-fit" key={index}>
-                <img
+                <Image
                   src={product.image}
                   alt=""
                   className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-110 group-hover:brightness-50"
