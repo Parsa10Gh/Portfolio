@@ -6,11 +6,11 @@ const Resume = () => {
   return (
     <motion.div
       id="resume"
-      className="px-2 min-[480px]:px-14 md:px-20 lg:px-10"
+      className="px-3 min-[480px]:px-14 md:px-20 lg:px-10"
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <h1 className="py-12 text-3xl font-bold">
         <span className="border-b-4 border-sky-600 pb-4">Res</span>ume

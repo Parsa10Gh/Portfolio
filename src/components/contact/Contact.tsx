@@ -28,8 +28,8 @@ const Contact = () => {
     <motion.div
       id="contact"
       className="px-3 min-[480px]:px-14 md:px-20 lg:px-10"
-      initial={{ opacity: 0, x: 400 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
@@ -39,16 +39,16 @@ const Contact = () => {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolorum.
       </p>
-      <div className="flex py-16 gap-8">
-        <div className="w-5/12 py-6 px-8 shadow-[-2px_-1px_20px_rgba(0,0,0,0.25)]">
+      <div className="lg:flex py-16 gap-8">
+        <div className="lg:w-5/12 py-6 px-3 sm:px-8 shadow-[-2px_-1px_20px_rgba(0,0,0,0.25)]">
           <ul>
             <li className="flex py-5 gap-4">
-              <div className="flex p-3 text-sky-600 bg-[#F4FAFD] rounded-full">
+              <div className="flex p-3 text-sky-600 h-fit bg-[#F4FAFD] rounded-full">
                 <LuMapPin className="text-2xl " />
               </div>
               <div>
                 <h5 className="text-lg font-bold">Address</h5>
-                <p className="text-sm">A108 Adam Street, New York, NY 535022</p>
+                <p className="text-sm h-fit">A108 Adam Street, New York, NY 535022</p>
               </div>
             </li>
             <li className="flex py-5 gap-4">
@@ -66,17 +66,17 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="text-lg font-bold">Email me</h5>
-                <p className="text-sm">parsa.ghorbani11@gmail.com</p>
+                <p className="text-sm text-wrap">parsa.ghorbani11@gmail.com</p>
               </div>
             </li>
           </ul>
         </div>
         <form
-          className="w-7/12 py-6 px-8 shadow-[-2px_-1px_20px_rgba(0,0,0,0.25)]"
+          className="lg:w-7/12 py-6 px-3 sm:px-8 my-8 lg:my-0 shadow-[-2px_-1px_20px_rgba(0,0,0,0.25)]"
           onSubmit={sendEmail}
         >
-          <div className="flex justify-between py-3">
-            <div className="w-1/2 pr-4">
+          <div className="md:flex justify-between py-3">
+            <div className="md:w-1/2 md:pr-4 py-3">
               <label htmlFor="name">Your Name</label>
               <input
                 type="text"
@@ -85,7 +85,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="w-1/2 pl-4">
+            <div className="md:w-1/2 md:pl-4 py-3">
               <label htmlFor="email">Your Email</label>
               <input
                 type="email"

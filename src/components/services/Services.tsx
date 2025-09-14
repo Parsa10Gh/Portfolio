@@ -14,7 +14,7 @@ const Services = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <h1 className="py-12 text-3xl font-bold">
         <span className="border-b-4 border-sky-600 pb-4">Ser</span>vices

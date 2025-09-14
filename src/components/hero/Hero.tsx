@@ -12,7 +12,7 @@ const Hero = () => {
       initial={{ }}
       whileInView={{ opacity: 1}}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <img
         id="hero_Background"

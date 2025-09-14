@@ -14,9 +14,9 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 import { RiHome2Line } from "react-icons/ri";
 import { TbDeviceDesktopCode } from "react-icons/tb";
 import { TfiEmail } from "react-icons/tfi";
+import { BsChatLeftQuote } from "react-icons/bs";
 
 const NavContents = () => {
-
   interface ContentsType {
     title: string;
     icon: IconType;
@@ -53,6 +53,11 @@ const NavContents = () => {
       title: "Services",
       icon: FiServer,
       link: "services",
+    },
+    {
+      title: "Testimonials",
+      icon: BsChatLeftQuote,
+      link: "testimonials",
     },
     {
       title: "Contact",
@@ -101,8 +106,11 @@ const NavContents = () => {
         </ul>
       </div>
       <ul id="navMenu" className="py-8 px-6 text-lg">
-        {contents.map((content,i) => (
-          <li key={i} className="group w-full text-gray-400 hover:cursor-pointer">
+        {contents.map((content, i) => (
+          <li
+            key={i}
+            className="group w-full text-gray-400 hover:cursor-pointer"
+          >
             <a href={`#${content.link}`} className="flex items-center py-4">
               <content.icon className="group-hover:text-sky-500 mb-1 mr-4" />
               <span className="group-hover:text-white">{content.title}</span>

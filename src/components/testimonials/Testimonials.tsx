@@ -77,7 +77,7 @@ const Testimonials = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="overflow-hidden">
         <h1 className="py-12 text-3xl font-bold">
@@ -96,7 +96,7 @@ const Testimonials = () => {
         >
           {loopTestimonials.map((t, i) => (
             <motion.div
-              className="w-full lg:w-1/3 shrink-0 px-4 text-center"
+              className="w-full lg:w-1/3 shrink-0 px-2 md:px-4 text-center"
               key={i}
             >
               <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
