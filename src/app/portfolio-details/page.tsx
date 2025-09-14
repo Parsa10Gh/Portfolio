@@ -3,7 +3,7 @@ import { selectActiveProduct } from "@/slices/portfolioSlices";
 import React from "react";
 import { useSelector } from "react-redux";
 
-const page = () => {
+const Page = () => {
   const activeProduct = useSelector(selectActiveProduct);
   return (
     <div>
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
