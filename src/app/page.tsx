@@ -1,3 +1,4 @@
+"use client"
 import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
 import Hero from "@/components/hero/Hero";
@@ -9,7 +10,7 @@ import Skills from "@/components/skills/Skills";
 import Stats from "@/components/stats/Stats";
 import Testimonials from "@/components/testimonials/Testimonials";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <div id="container">
@@ -29,5 +30,3 @@ const Home = () => {
     </>
   );
 }
-
-export default Home
