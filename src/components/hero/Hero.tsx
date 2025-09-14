@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "motion/react";
 import Typewriter from "typewriter-effect";
-import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -15,7 +14,7 @@ const Hero = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <Image
+      <img
         id="hero_Background"
         src="image.jpg"
         alt=""

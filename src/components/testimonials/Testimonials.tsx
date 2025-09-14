@@ -2,7 +2,6 @@
 import { RsetAddIndex, selectAddIndex } from "@/slices/navMenuSlice";
 import { AppDispatch } from "@/store/store";
 import { motion } from "motion/react";
-import Image from "next/image";
 import React, { useEffect } from "react";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
@@ -106,7 +105,7 @@ const Testimonials = () => {
                 &nbsp;&nbsp;
                 <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
               </p>
-              <Image
+              <img
                 src={t.image}
                 alt=""
                 className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
@@ -134,7 +133,7 @@ const Testimonials = () => {
                 &nbsp;&nbsp;
                 <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
               </p>
-              <Image
+              <img
                 src={t.image}
                 alt=""
                 className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
