@@ -59,7 +59,7 @@ const Resume = () => {
               Iran University of Science and Technology, Tehran
             </p>
             <p className="py-2">
-              I earned my Bachelor's degree in Electrical Engineering with a
+              I earned my Bachelor&apos;s degree in Electrical Engineering with a
               specialization in Control from Iran University of Science and
               Technology. I was admitted after achieving a rank of 621 in the
               national university entrance exam &#40;Konkur&#41;, Which is a
