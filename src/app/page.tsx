@@ -6,7 +6,6 @@ import Portfolio from "@/components/portfolio/Portfolio";
 import Resume from "@/components/resume/Resume";
 import Services from "@/components/services/Services";
 import Skills from "@/components/skills/Skills";
-import Stats from "@/components/stats/Stats";
 import Testimonials from "@/components/testimonials/Testimonials";
 
 export default function Home() {
