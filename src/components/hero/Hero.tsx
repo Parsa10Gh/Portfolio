@@ -25,7 +25,7 @@ const Hero = () => {
           Parsa Ghorbani
         </h1>
         <div className="w-fit text-xl md:text-2xl xl:text-3xl flex ">
-          <p className="pr-2">I'm</p>
+          <p className="pr-2">I&apos;m</p>
           <span className="border-b-2 border-sky-600 pb-1">
             <Typewriter
               onInit={(typewriter) => {
