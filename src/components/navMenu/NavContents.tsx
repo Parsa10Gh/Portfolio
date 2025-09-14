@@ -1,4 +1,4 @@
-import React, { JSX } from "react";
+import React from "react";
 import { IconType } from "react-icons";
 import { FiServer } from "react-icons/fi";
 import { HiOutlineDocumentText } from "react-icons/hi";
