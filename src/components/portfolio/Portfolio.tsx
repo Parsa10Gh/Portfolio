@@ -45,9 +45,17 @@ const Portfolio = () => {
     },
     {
       title: "Portfolio",
-      subtitle: "My personal portfolio website, which showcases my work and career highlights",
+      subtitle:
+        "My personal portfolio website, which showcases my work and career highlights",
       image: "portfolio.png",
-      link: "https://portfolio-parsa-ghorbani.vercel.app/",
+      link: "https://portfolio-parsa-ghorbani.vercel.app",
+    },
+    {
+      title: "Sample Landing Page",
+      subtitle:
+        "This is a single sample landing page designed and developed to showcase my front-end development skills, including React, Next.js, TypeScript, and Tailwind CSS.",
+      image: "sample-landing-page.png",
+      link: "https://sample-landing-page-project.vercel.app",
     },
   ];
 
