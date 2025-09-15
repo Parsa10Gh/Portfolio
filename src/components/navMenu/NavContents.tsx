@@ -6,7 +6,6 @@ import { IoImagesOutline } from "react-icons/io5";
 import {
   LiaTelegramPlane,
   LiaLinkedin,
-  LiaInstagram,
   LiaGithub,
   LiaWhatsapp,
 } from "react-icons/lia";
