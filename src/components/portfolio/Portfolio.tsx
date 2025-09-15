@@ -31,20 +31,21 @@ const Portfolio = () => {
   const products: Products[] = [
     {
       title: "Opera SaaS",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
+      subtitle:
+        "Implementing the front-end of a responsive SaaS (Software as a Service) application that provides descriptions of the AI services offered by my client",
       image: "Opera_SaaS.png",
       link: "https://opera-saas.vercel.app",
     },
     {
       title: "Weather App",
       subtitle:
-        "A mini app using html, css & js. This project is a simple page in which you can know the weather status of diffrent cities based on their name.",
+        "A mini app using html, css & js. This project is a simple page in which you can know the weather status of diffrent cities based on their name",
       image: "weather-app.png",
       link: "https://howisweather.vercel.app",
     },
     {
       title: "Portfolio",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
+      subtitle: "My personal portfolio website, which showcases my work and career highlights",
       image: "portfolio.png",
       link: "https://portfolio-parsa-ghorbani.vercel.app/",
     },
@@ -61,7 +62,7 @@ const Portfolio = () => {
         viewport={{ once: true, amount: 0.1 }}
       >
         <h1 className="py-12 text-3xl font-bold">
-          <span className="border-b-4 border-sky-600 pb-4">Por</span>tfolio
+          <span className="border-b-4 border-sky-600 pb-4">Pro</span>jects
         </h1>
         <p>
           Some of the projects I&apos;ve built, showcasing my work with React,
@@ -70,7 +71,7 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
           {products.map((product, index) => (
             <div
-              className="relative group overflow-hidden bg-black h-fit"
+              className="relative group overflow-hidden shadow-[-15px_15px_10px_rgba(0,0,0,0.25)] bg-black h-fit"
               key={index}
             >
               <img
@@ -83,7 +84,7 @@ const Portfolio = () => {
                 {product.title}
               </h4>
 
-              <p className="absolute text-white text-sm px-2 font-bold w-full text-center bottom-6 font-[sans-serif] hidden group-hover:block">
+              <p className="absolute text-white text-xs px-6 font-bold w-full text-center bottom-6 font-[sans-serif] hidden group-hover:block">
                 {product.subtitle}
               </p>
 
@@ -92,7 +93,6 @@ const Portfolio = () => {
                   href={product.link}
                   onClick={() => {
                     openModal(product);
-                    console.log(product);
                   }}
                 >
                   <BsLink45Deg className="pointer-events-auto hover:cursor-pointer hover:text-sky-600" />
