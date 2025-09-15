@@ -12,7 +12,7 @@ import {
 } from "react-icons/lia";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { RiHome2Line } from "react-icons/ri";
-import { TbDeviceDesktopCode } from "react-icons/tb";
+import { TbDeviceDesktopCode, TbWorldWww } from "react-icons/tb";
 import { TfiEmail } from "react-icons/tfi";
 import { BsChatLeftQuote } from "react-icons/bs";
 
@@ -84,7 +84,7 @@ const NavContents = () => {
             </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <a href="">
+            <a href="https://wa.me/989397815214">
               <LiaWhatsapp />
             </a>
           </li>
@@ -94,12 +94,12 @@ const NavContents = () => {
             </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <a href="">
-              <LiaInstagram />
+            <a href="https://portfolio-parsa-ghorbani.vercel.app">
+              <TbWorldWww />
             </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <a href="">
+            <a href="https://t.me/TheParsaGh">
               <LiaTelegramPlane />
             </a>
           </li>

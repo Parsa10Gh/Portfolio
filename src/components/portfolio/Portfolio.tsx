@@ -3,55 +3,50 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { BsLink45Deg, BsX, BsZoomIn } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { RsetActiveProduct, RsetToggleModal, selectActiveProduct, selectToggleModal } from "@/slices/portfolioSlices";
+import {
+  RsetActiveProduct,
+  RsetToggleModal,
+  selectActiveProduct,
+  selectToggleModal,
+} from "@/slices/portfolioSlices";
 import { AppDispatch } from "@/store/store";
 import Link from "next/link";
 
 const Portfolio = () => {
   const dispatch = useDispatch<AppDispatch>();
   const isModalOpen = useSelector(selectToggleModal);
-  const activeProduct = useSelector(selectActiveProduct)
+  const activeProduct = useSelector(selectActiveProduct);
 
   const openModal = (product: Products) => {
-    dispatch(RsetActiveProduct(product)) ;
+    dispatch(RsetActiveProduct(product));
   };
 
   interface Products {
     title: string;
     subtitle: string;
     image: string;
+    link: string;
   }
 
   const products: Products[] = [
     {
-      title: "Book",
+      title: "Opera SaaS",
       subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "books-1.jpg",
+      image: "Opera_SaaS.png",
+      link: "https://opera-saas.vercel.app",
     },
     {
-      title: "App",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "app-1.jpg",
+      title: "Weather App",
+      subtitle:
+        "A mini app using html, css & js. This project is a simple page in which you can know the weather status of diffrent cities based on their name.",
+      image: "weather-app.png",
+      link: "https://howisweather.vercel.app",
     },
     {
-      title: "App",
+      title: "Portfolio",
       subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "app-1.jpg",
-    },
-    {
-      title: "App",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "app-1.jpg",
-    },
-    {
-      title: "App",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "app-1.jpg",
-    },
-    {
-      title: "App",
-      subtitle: "Lorem ipsum dolor sit amet consectetur",
-      image: "books-1.jpg",
+      image: "portfolio.png",
+      link: "https://portfolio-parsa-ghorbani.vercel.app/",
     },
   ];
 
@@ -69,40 +64,48 @@ const Portfolio = () => {
           <span className="border-b-4 border-sky-600 pb-4">Por</span>tfolio
         </h1>
         <p>
-          Some of the projects I&apos;ve built, showcasing my work with React, Next.js, TypeScript, and other technologies.
+          Some of the projects I&apos;ve built, showcasing my work with React,
+          Next.js, TypeScript, and other technologies.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
-          {products.map((product,index) => (
-              <div className="relative group overflow-hidden bg-black h-fit" key={index}>
-                <img
-                  src={product.image}
-                  alt=""
-                  className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-110 group-hover:brightness-50"
+          {products.map((product, index) => (
+            <div
+              className="relative group overflow-hidden bg-black h-fit"
+              key={index}
+            >
+              <img
+                src={product.image}
+                alt=""
+                className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-110 group-hover:brightness-50"
+              />
+
+              <h4 className="absolute bg-sky-700 text-white rounded-lg left-4 top-4 px-3 py-1 font-[sans-serif] font-extralight text-sm hidden group-hover:block">
+                {product.title}
+              </h4>
+
+              <p className="absolute text-white text-sm px-2 font-bold w-full text-center bottom-6 font-[sans-serif] hidden group-hover:block">
+                {product.subtitle}
+              </p>
+
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-4 text-white text-3xl font-bold font-[sans-serif] hidden group-hover:flex pointer-events-none">
+                <Link
+                  href={product.link}
+                  onClick={() => {
+                    openModal(product);
+                    console.log(product);
+                  }}
+                >
+                  <BsLink45Deg className="pointer-events-auto hover:cursor-pointer hover:text-sky-600" />
+                </Link>
+                <BsZoomIn
+                  className="pointer-events-auto hover:cursor-pointer hover:text-sky-600"
+                  onClick={() => {
+                    dispatch(RsetToggleModal(isModalOpen));
+                    openModal(product);
+                  }}
                 />
-
-                <h4 className="absolute bg-sky-700 text-white rounded-lg left-4 top-4 px-3 py-1 font-[sans-serif] font-extralight text-sm hidden group-hover:block">
-                  {product.title}
-                </h4>
-
-                <p className="absolute text-white font-bold w-full text-center bottom-6 font-[sans-serif] hidden group-hover:block">
-                  {product.subtitle}
-                </p>
-
-                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-4 text-white text-3xl font-bold font-[sans-serif] hidden group-hover:flex pointer-events-none">
-                  <Link href="/portfolio-details" onClick={() => {openModal(product)
-                    console.log(product)
-                  }}>
-                    <BsLink45Deg className="pointer-events-auto hover:cursor-pointer hover:text-sky-600" />
-                  </Link>
-                  <BsZoomIn
-                    className="pointer-events-auto hover:cursor-pointer hover:text-sky-600"
-                    onClick={() => {
-                      dispatch(RsetToggleModal(isModalOpen));
-                      openModal(product);
-                    }}
-                  />
-                </p>
-              </div>
+              </p>
+            </div>
           ))}
         </div>
       </motion.div>
@@ -120,11 +123,14 @@ const Portfolio = () => {
                 <BsX />
               </button>
             </div>
-            <div className="relative p-2 md:p-10 z-10">
+            <div
+              className="relative p-2 md:p-10 z-10"
+              onClick={() => dispatch(RsetToggleModal(isModalOpen))}
+            >
               <motion.img
                 src={activeProduct.image}
                 alt=""
-                className="md:w-11/12 mx-auto rounded-lg"
+                className="md:w-10/12 mx-auto rounded-lg"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0 }}

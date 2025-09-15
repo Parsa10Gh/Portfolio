@@ -34,12 +34,14 @@ const Resume = () => {
             </h2>
           </div>
           <div className="pl-6 py-3 border-l-2 border-[#119DDD]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id
-            recusandae eius tempora autem quaerat illum, ullam harum eaque
-            perspiciatis. Quis tempora beatae neque quod magni ipsa dolorem
-            assumenda itaque?
+            I was born and raised in Bandar-e Anzali, Gilan. I moved to Tehran
+            when I was admitted to Iran University of Science and Technology,
+            where I continued my education. During this time, I discovered my
+            passion for front-end development. This interest motivated me to learn
+            HTML, CSS, and JavaScript, and gradually explore frameworks like
+            React and Next.js.
             <ul className="pt-4 list-disc pl-6">
-              <li className="py-1">Portland par 127,Orlando, FL</li>
+              <li className="py-1">Narmak, Tehran, Iran</li>
               <li className="py-1">(+98)9397815214</li>
               <li className="py-1">parsa.ghorbani11@gmail.com</li>
             </ul>
@@ -59,8 +61,8 @@ const Resume = () => {
               Iran University of Science and Technology, Tehran
             </p>
             <p className="py-2">
-              I earned my Bachelor&apos;s degree in Electrical Engineering with a
-              specialization in Control from Iran University of Science and
+              I earned my Bachelor&apos;s degree in Electrical Engineering with
+              a specialization in Control from Iran University of Science and
               Technology. I was admitted after achieving a rank of 621 in the
               national university entrance exam &#40;Konkur&#41;, Which is a
               highly competitive test that selects students for top universities
@@ -84,23 +86,32 @@ const Resume = () => {
             <p className="py-2">
               Gashtasp is a leading accelerator in the field of artificial
               intelligence. During my time there, I contributed to the
-              development of modern, scalable, and user-focused web
-              applications which was for showing the services they provide and present their services.
-              <p className="font-bold pt-2 pb-1.5">Key Achievements & Tasks:</p>
-              <ul className="list-disc px-4">
-                <li className="py-1">Built responsive and user-friendly landing pages</li>
-                <li className="py-1">Implemented UI/UX designs into functional interfaces</li>
-                <li className="py-1">Developed Single Page Applications (SPA)</li>
-                <li className="py-1">Integrated APIs for dynamic data handling</li>
-                <li className="py-1">
-                  Optimized application performance for speed and efficiency
-                </li>
-                <li className="py-1">
-                  Contributed to the development of Software as a Service (SaaS)
-                  solutions
-                </li>
-              </ul>
+              development of modern, scalable, and user-focused web applications
+              which was for showing the services they provide and present their
+              services.
+              <span className="block font-bold pt-2 pb-0.5">
+                Key Achievements & Tasks:
+              </span>
             </p>
+            <ul className="list-disc px-4">
+              <li className="py-1">
+                Built responsive and user-friendly landing pages
+              </li>
+              <li className="py-1">
+                Implemented UI/UX designs into functional interfaces
+              </li>
+              <li className="py-1">Developed Single Page Applications (SPA)</li>
+              <li className="py-1">
+                Integrated APIs for dynamic data handling
+              </li>
+              <li className="py-1">
+                Optimized application performance for speed and efficiency
+              </li>
+              <li className="py-1">
+                Contributed to the development of Software as a Service (SaaS)
+                solutions
+              </li>
+            </ul>
           </div>
         </div>
       </div>

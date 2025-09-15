@@ -52,7 +52,7 @@ const Contact = () => {
               <div>
                 <h5 className="text-lg font-bold">Address</h5>
                 <p className="text-sm h-fit">
-                  A108 Adam Street, New York, NY 535022
+                  Narmak, Tehran, Iran
                 </p>
               </div>
             </li>
