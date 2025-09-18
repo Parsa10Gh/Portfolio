@@ -39,7 +39,7 @@ const Portfolio = () => {
     {
       title: "Weather App",
       subtitle:
-        "A mini app using html, css & js. This project is a simple page in which you can know the weather status of diffrent cities based on their name",
+        "A mini app using html, css & js which is connected to api. This project is a simple page in which you can know the weather status of diffrent cities based on their name",
       image: "weather-app.png",
       link: "https://howisweather.vercel.app",
     },
