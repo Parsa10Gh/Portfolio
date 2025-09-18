@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import React, { useEffect } from "react";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
+import MySlider from "./MySlider";
 
 const Testimonials = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -71,95 +72,109 @@ const Testimonials = () => {
   }, [testimonialIndex]);
 
   return (
-    <motion.div
-      id="testimonials"
+    <div
       className="px-3 min-[480px]:px-14 md:px-20 lg:px-10 bg-[#F4FAFD]"
-      initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.1 }}
+      id="testimonials"
     >
-      <div className="overflow-hidden">
-        <h1 className="py-12 text-3xl font-bold">
-          <span className="border-b-4 border-sky-600 pb-4">Tes</span>timonials
-        </h1>
-        <p>
-          This section is currently under development. The following
-          testimonials are placeholders and will be updated with real feedback
-          from clients and collaborators soon.
-        </p>
-
-        {/* less than lg width */}
-        <motion.div
-          className="flex lg:hidden pt-16 pb-10"
-          animate={{ x: `${pose[testimonialIndex % 9] * 3}%` }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          {loopTestimonials.map((t, i) => (
-            <motion.div
-              className="w-full lg:w-1/3 shrink-0 px-2 md:px-4 text-center"
-              key={i}
-            >
-              <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
-                <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
-                &nbsp;&nbsp;{t.text}
-                &nbsp;&nbsp;
-                <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
-              </p>
-              <img
-                src={t.image}
-                alt=""
-                className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
-              />
-              <h3 className="text-lg font-bold py-2">{t.name}</h3>
-              <h4 className="text-[16px]">{t.job}</h4>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* more than lg width */}
-        <motion.div
-          className="hidden lg:flex pt-16 pb-10"
-          animate={{ x: `${pose[testimonialIndex % 9]}%` }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          {loopTestimonials.map((t, i) => (
-            <motion.div
-              className="w-full lg:w-1/3 shrink-0 px-4 text-center"
-              key={i}
-            >
-              <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
-                <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
-                &nbsp;&nbsp;{t.text}
-                &nbsp;&nbsp;
-                <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
-              </p>
-              <img
-                src={t.image}
-                alt=""
-                className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
-              />
-              <h3 className="text-lg font-bold py-2">{t.name}</h3>
-              <h4 className="text-[16px]">{t.job}</h4>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <div className="flex justify-center gap-2 pb-16">
-          {testimonials.map((_, i) => (
-            <div
-              className={`w-3 h-3 border-1 border-sky-600 ${
-                i * -33.3 == pose[testimonialIndex % 9]
-                  ? "bg-sky-600"
-                  : "bg-none"
-              } rounded-full hover:cursor-pointer`}
-              onClick={() => dispatch(RsetAddIndex(i))}
-              key={i}
-            ></div>
-          ))}
-        </div>
+      <h1 className="py-12 text-3xl font-bold">
+        <span className="border-b-4 border-sky-600 pb-4">Tes</span>timonials
+      </h1>
+      <p>
+        This section is currently under development. The following testimonials
+        are placeholders and will be updated with real feedback from clients and
+        collaborators soon.
+      </p>
+      <div className="py-16">
+        <MySlider />
       </div>
-    </motion.div>
+    </div>
+    // <motion.div
+    //   id="testimonials"
+    //   className="px-3 min-[480px]:px-14 md:px-20 lg:px-10 bg-[#F4FAFD]"
+    //   initial={{ opacity: 0, y: 200 }}
+    //   whileInView={{ opacity: 1, y: 0 }}
+    //   transition={{ duration: 0.6, ease: "easeOut" }}
+    //   viewport={{ once: true, amount: 0.1 }}
+    // >
+    //   <div className="overflow-hidden">
+    //     <h1 className="py-12 text-3xl font-bold">
+    //       <span className="border-b-4 border-sky-600 pb-4">Tes</span>timonials
+    //     </h1>
+    //     <p>
+    //       This section is currently under development. The following
+    //       testimonials are placeholders and will be updated with real feedback
+    //       from clients and collaborators soon.
+    //     </p>
+
+    //     {/* less than lg width
+    //     <motion.div
+    //       className="flex lg:hidden pt-16 pb-10"
+    //       animate={{ x: `${pose[testimonialIndex % 9] * 3}%` }}
+    //       transition={{ duration: 0.6, ease: "easeOut" }}
+    //     >
+    //       {loopTestimonials.map((t, i) => (
+    //         <motion.div
+    //           className="w-full lg:w-1/3 shrink-0 px-2 md:px-4 text-center"
+    //           key={i}
+    //         >
+    //           <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
+    //             <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
+    //             &nbsp;&nbsp;{t.text}
+    //             &nbsp;&nbsp;
+    //             <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
+    //           </p>
+    //           <img
+    //             src={t.image}
+    //             alt=""
+    //             className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
+    //           />
+    //           <h3 className="text-lg font-bold py-2">{t.name}</h3>
+    //           <h4 className="text-[16px]">{t.job}</h4>
+    //         </motion.div>
+    //       ))}
+    //     </motion.div> */}
+    //     {/* more than lg width */}
+    //     {/* <motion.div
+    //       className="hidden lg:flex pt-16 pb-10"
+    //       animate={{ x: `${pose[testimonialIndex % 9]}%` }}
+    //       transition={{ duration: 0.6, ease: "easeOut" }}
+    //     >
+    //       {loopTestimonials.map((t, i) => (
+    //         <motion.div
+    //           className="w-full lg:w-1/3 shrink-0 px-4 text-center"
+    //           key={i}
+    //         >
+    //           <p className="p-6 bg-white shadow-[0_10px_6px_rgba(0,0,0,0.25)] rounded-lg">
+    //             <BiSolidQuoteAltLeft className="inline text-sky-500 text-2xl" />
+    //             &nbsp;&nbsp;{t.text}
+    //             &nbsp;&nbsp;
+    //             <BiSolidQuoteAltRight className="inline text-sky-500 text-2xl" />
+    //           </p>
+    //           <img
+    //             src={t.image}
+    //             alt=""
+    //             className="mx-auto w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/4 rounded-full mt-6"
+    //           />
+    //           <h3 className="text-lg font-bold py-2">{t.name}</h3>
+    //           <h4 className="text-[16px]">{t.job}</h4>
+    //         </motion.div>
+    //       ))}
+    //     </motion.div> */}
+    //     <div className="flex justify-center gap-2 pb-16">
+    //       {testimonials.map((_, i) => (
+    //         <div
+    //           className={`w-3 h-3 border-1 border-sky-600 ${
+    //             i * -33.3 == pose[testimonialIndex % 9]
+    //               ? "bg-sky-600"
+    //               : "bg-none"
+    //           } rounded-full hover:cursor-pointer`}
+    //           onClick={() => dispatch(RsetAddIndex(i))}
+    //           key={i}
+    //         ></div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </motion.div>
   );
 };
 
