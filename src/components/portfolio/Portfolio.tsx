@@ -34,28 +34,28 @@ const Portfolio = () => {
       subtitle:
         "Implementing the front-end of a responsive SaaS (Software as a Service) application that provides descriptions of the AI services offered by my client",
       image: "Opera_SaaS.png",
-      link: "https://opera-saas.vercel.app",
+      link: "https://opera-saas.onrender.com",
     },
     {
       title: "Weather App",
       subtitle:
         "A mini app using html, css & js which is connected to api. This project is a simple page in which you can know the weather status of diffrent cities based on their name",
       image: "weather-app.png",
-      link: "https://howisweather.vercel.app",
+      link: "https://parsa10gh.github.io/weather-website",
     },
     {
       title: "Portfolio",
       subtitle:
         "My personal portfolio website, which showcases my work and career highlights",
       image: "portfolio.png",
-      link: "https://portfolio-parsa-ghorbani.vercel.app",
+      link: "https://portfolio-n83p.onrender.com",
     },
     {
       title: "Sample Landing Page",
       subtitle:
         "This is a single sample landing page designed and developed to showcase my front-end development skills, including React, Next.js, TypeScript, and Tailwind CSS.",
       image: "sample-landing-page.png",
-      link: "https://sample-landing-page-project.vercel.app",
+      link: "https://sample-landingpage-project.onrender.com",
     },
   ];
 
