@@ -34,7 +34,7 @@ const Portfolio = () => {
       subtitle:
         "Implementing the front-end of a responsive SaaS (Software as a Service) application that provides descriptions of the AI services offered by my client",
       image: "Opera_SaaS.png",
-      link: "https://opera-saas.onrender.com",
+      link: "https://opera-saas.netlify.app",
     },
     {
       title: "Weather App",
@@ -48,14 +48,14 @@ const Portfolio = () => {
       subtitle:
         "My personal portfolio website, which showcases my work and career highlights",
       image: "portfolio.png",
-      link: "https://portfolio-n83p.onrender.com",
+      link: "https://portfolio-parsa.ghorbani.netlify.app",
     },
     {
       title: "Sample Landing Page",
       subtitle:
         "This is a single sample landing page designed and developed to showcase my front-end development skills, including React, Next.js, TypeScript, and Tailwind CSS.",
       image: "sample-landing-page.png",
-      link: "https://sample-landingpage-project.onrender.com",
+      link: "https://sample-agency-landingpage.netlify.app",
     },
   ];
 

@@ -93,7 +93,7 @@ const NavContents = () => {
             </a>
           </li>
           <li className="bg-[#1D232B] p-2 text-2xl rounded-full">
-            <a href="https://portfolio-parsa-ghorbani.vercel.app">
+            <a href="https://portfolio-parsa-ghorbani.netlify.app">
               <TbWorldWww />
             </a>
           </li>
