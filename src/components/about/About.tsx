@@ -57,13 +57,13 @@ const About = () => {
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
                 <strong>Website :</strong>
-                &nbsp;&nbsp;&nbsp;www.portfolio.com
+                &nbsp;&nbsp;&nbsp;<a href="https://portfolio-parsa-ghorbani.netlify.app">Click to see my portfolio</a>
               </p>
             </li>
             <li className="flex items-center">
               <RxCaretRight className="text-3xl text-sky-500 font-extralight" />
               <p className="h-full pt-0.5">
-                <strong className="font-bold">Degree :</strong>
+                <strong className="font-bold">Degee :</strong>
                 &nbsp;&nbsp;&nbsp;Bachelor
               </p>
             </li>
