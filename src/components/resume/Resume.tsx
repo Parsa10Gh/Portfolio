@@ -25,7 +25,7 @@ const Resume = () => {
         technical solutions and project success.
       </p>
       <div className="grid lg:grid-cols-2 gap-4 py-16">
-        <div>
+        <div className="pr-4">
           <h1 className="text-2xl font-bold px-4 pb-6">Summery</h1>
           <div className="flex items-center relative py-2">
             <div className="h-4 w-4 border-2 border-[#119DDD] rounded-xl absolute left-[-7px] bottom-[-1.5px]"></div>
@@ -33,7 +33,7 @@ const Resume = () => {
               PARSA GHORBANI
             </h2>
           </div>
-          <div className="pl-6 py-3 border-l-2 border-[#119DDD]">
+          <div className="pl-6 py-3 border-l-2 border-[#119DDD] text-justify">
             I was born and raised in Bandar-e Anzali, Gilan. I moved to Tehran
             when I was admitted to Iran University of Science and Technology,
             where I continued my education. During this time, I discovered my
@@ -67,6 +67,24 @@ const Resume = () => {
               national university entrance exam &#40;Konkur&#41;, Which is a
               highly competitive test that selects students for top universities
               across Iran.
+            </p>
+          </div>
+        </div>
+        <div className="pr-2">
+          <h1 className="text-2xl font-bold px-4 pb-6">Education</h1>
+          <div className="flex items-center relative py-2">
+            <div className="h-4 w-4 border-2 border-[#119DDD] rounded-xl  absolute left-[-7px] bottom-[-1.5px]"></div>
+            <h2 className="pl-4 absolute text-xl text-gray-600 font-semibold">
+              MASTER OF ELECTRICAL ENGINEERING
+            </h2>
+          </div>
+          <div className="pl-6 py-3 border-l-2 border-[#119DDD]">
+            <p className="px-4 py-2 block">2025-Present</p>
+            <p className="py-1 italic">
+              Sharif University of Technology, Tehran
+            </p>
+            <p className="py-2">
+              I Started my master at sharif unversity of technology. 
             </p>
           </div>
         </div>
