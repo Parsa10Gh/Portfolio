@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="text-lg font-bold">Call me</h5>
-                <p className="text-sm">+989397815214</p>
+                <p className="text-sm">+989938322293</p>
               </div>
             </li>
             <li className="flex py-5 gap-4">
